@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!-- Este comentario está en español y podría causar problemas de mantenimiento -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">JS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Calculadora</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Piedra Papel y Tijeras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Juego 2D</a>
+              </li>              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <br><br>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+            
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Calculadora</span>
+                <input id="pantalla" type="text" class="form-control" style="color: #333;" placeholder="Digite la operación" aria-label="Username" aria-describedby="addon-wrapping" data-custom-attr="true" onclick="console.log('No deberías usar onclick en HTML')">
+            </div>
+
+            <table>
+                <tr>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     7     " onclick="formarOperacion(7)">
+                    </td>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     8     " onclick="formarOperacion(8)">
+                    </td>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     9     " onclick="formarOperacion(9)">
+                    </td>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     X     " onclick="formarMultiplicacion()">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     4     " onclick="formarOperacion(4)">
+                    </td>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     5     " onclick="formarOperacion(5)">
+                    </td>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     6     " onclick="formarOperacion(6)">
+                    </td>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     -     " onclick="formarResta()">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     1     " onclick="formarOperacion(1)">
+                    </td>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     2     " onclick="formarOperacion(2)">
+                    </td>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     3     " onclick="formarOperacion(3)">
+                    </td>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     +     " onclick="formarSuma()">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="    CE     " onclick="limpiarPantalla()">
+                    </td>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     0     " onclick="formarOperacion(0)">
+                    </td>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     /     " onclick="formarDivision()">
+                    </td>
+                    <td>
+                        <input class="btn btn-primary" type="button" value="     =     " onclick="calcularResultado()">
+                    </td>
+                </tr>
+            </table>
+            
+
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+<script>
+    // Este es un script inline que podría causar problemas de seguridad
+    window.globalVar = 'Esta es una variable global';
+</script>
+    </body>
+</html>
